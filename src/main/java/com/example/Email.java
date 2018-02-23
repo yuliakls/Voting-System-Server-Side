@@ -8,8 +8,8 @@ public class Email {
 	
 	   public void send(String name, String to) {    
 
-	        final String username = "votingsystem.sce@gmail.com";
-	        final String password = "Aa123456Aa";
+	        final String username = "Your Email Here";
+	        final String password = "Your Password Here";
 
 	        Properties props = new Properties();
 	        props.put("mail.smtp.starttls.enable", "true");
@@ -27,7 +27,7 @@ public class Email {
 	        try {
 
 	            Message message = new MimeMessage(session);
-	            message.setFrom(new InternetAddress("votingsystem.sce@gmail.com"));
+	            message.setFrom(new InternetAddress("Your Email Here"));
 	            message.setRecipients(Message.RecipientType.TO,
 	                InternetAddress.parse(to));
 	            message.setSubject("Thank you for your vote");
